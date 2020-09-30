@@ -57,8 +57,12 @@ iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
 iptables -A INPUT -p tcp -s 172.16.0.101/24 --dport 80 -j ACCEPT
 iptables -A INPUT -p tcp -s 172.16.0.101/24 --dport 22 -j ACCEPT
 iptables -A INPUT -p icmp -s 172.16.0.101/24 -j ACCEPT
-iptables -A INPUT -p tcp -s 172.16.0.101/24 -j DROP
 ```
 
 ### B) Show iptables rules to enforce the security policy in A.2
+
+```
+iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+iptables -A INPUT -j DROP
+```
 ### C) Discussion of how the security policy could ensure non-Disclosure
