@@ -238,7 +238,7 @@ The issues found with the security policy, as is, in regards to the company's se
 - line 2: This command will **Append** to **INPUT** to **ACCEPT** all traffic on port **80** from the workstation's IP, there by enabling **Web service**.
 - line 3: This command will **Append** to **INPUT** to **ACCEPT** all traffic on port **80** from the external network 'B', there by enabling **Web service**.
 - line 4: This command will **Append** to **INPUT** to **ACCEPT** all traffic on port **22** from the workstation's IP, there by enabling **SSH**. 
-- line 5: This command will **Append** to **INPUT** to **ACCEPT** all **icmp** protocall requests, this will allow for responses to connection.
+- line 5: This command will **Append** to **INPUT** to **ACCEPT** all **icmp** protocol requests, this will allow for responses to connection.
 - line 6: This command will **DROP** all other connection attempts to the server.
 
 ### B) Show iptables rules to enforce the security policy in A.2
@@ -252,13 +252,13 @@ The following is an implimentation for the iptables rules that would enforce the
 
 ### Explination
 
-The issues found with teh security policy as it is in regards to the company's workstations were found in the policy rule 'e', "The workstations can access the services hosted by the server." This rule cannot be enforced by the router 'R' as again it wouldn't see these connections and so it must be explicitely stated that workstations 'A.2' can accept traffic coming from the server 'A.1'. The following is an explination of the rules that would enforce that a workstation can access services in network 'A' that are provided by the server. The following is a line-by-line explination:
+The issues found with the security policy as it is in regards to the company's workstations were found in the policy rule 'e', "The workstations can access the services hosted by the server." This rule cannot be enforced by the router 'R' as again it wouldn't see these connections and so it must be explicitely stated that workstations 'A.2' can accept traffic coming from the server 'A.1'. The following is an explination of the rules that would enforce that a workstation can access services in network 'A' that are provided by the server. The following is a line-by-line explination:
 
 - line 1: This command will **Append** to **INPUT** to **ACCEPT** all related and established rules, this includes services provided by the server.
 - line 2: This command will **DROP** all other traffic.
 
 ### C) Discussion of how the security policy could ensure non-Disclosure
 
-The issues we found with non-disclosure in regards to the security palicy as it is written are that there seems to be no safegards in what information could be passed through 'HTTP' as there is no restriction to what protocalls can be used. The policy rules 'e' and 'f' state that the workstations can access all services provided by the server and that the workstations can access web services provided by external computers. If a workstation interacted with an external web services and this was on a non-secure network connection, then the external server could infect the workstation with malware that could then interact with the server from the workstation and create a backdoor to the server through the workstation. Furthermore, policy rule 'a' has a similer issue for the same reasoning. If an external computer attempted to pass a script as an input to the server in some way, known as cross-site scripting, then then all accounts on the server could suffer from a data-leak.
+The issues we found with non-disclosure in regards to the security policy as it is written are that there seems to be no safegards in what information could be passed through 'HTTP' as there is no restriction to what protocols can be used. The policy rules 'e' and 'f' state that the workstations can access all services provided by the server and that the workstations can access web services provided by external computers. If a workstation interacted with an external web services and this was on a non-secure network connection, then the external server could infect the workstation with malware that could then interact with the server from the workstation and create a backdoor to the server through the workstation. Furthermore, policy rule 'a' has a similer issue for the same reasoning. If an external computer attempted to pass a script as an input to the server in some way, known as cross-site scripting, then then all accounts on the server could suffer from a data-leak.
 
 These issues with the security policy would lead us to declare that the system could be at risk and we would deem that the system is unsecure. We do not believe that these policies would prevent the disclosure of classified data nor insure the integrity of the systems on the componies internal network without revision.
