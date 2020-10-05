@@ -36,6 +36,11 @@ Scan all computers and services in Network B. Record the identified computers an
 
 ## Impliment Security Policy, Task III
 ### A) Access Control Matrix
+| Name:             | A.1 (server)    | A.2 (workstations)| B (external) |
+|-------------------|-----------------|-------------------|--------------|
+| A.1 (server)      | -               | ping              | ping         |
+| A.2 (workstations)| ssh, http, ping | ping              | http, ping   |
+| B (external)      | http            | -                 | -            |
 ### B) Issues with Policy Compliance 
 ### C) iptables Rules in R
 ![iptables rules in R](./images/iptables.png)
