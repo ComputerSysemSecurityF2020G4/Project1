@@ -42,6 +42,7 @@ Scan all computers and services in Network B. Record the identified computers an
 | A.2 (workstations)| ssh, http, ping | ping              | http, ping   |
 | B (external)      | http            | -                 | -            |
 ### B) Issues with Policy Compliance 
+Since the router merely acts as a switch between systems on the same network, iptables rules on R can only govern internetwork communications between A and B. Any intranetwork communication rules from a system in A to another system in A cannot be enforced by the iptables of R. Likewise, any intranetwork communication rules from a system in B to another system in B cannot be enforced by the iptables of R.
 ### C) iptables Rules in R
 ![iptables rules in R](./images/iptables.png)
 
