@@ -213,7 +213,7 @@ Since the router merely acts as a switch between systems on the same network, ip
 
 #### A.2 and A.1, stating whether or not ping is allowed between computers.
 
----
+---![Image_9-28-20_at_4.26_PM.jpeg](./images/Image_9-28-20_at_4.26_PM.jpeg)
 
 ## Closing
 
