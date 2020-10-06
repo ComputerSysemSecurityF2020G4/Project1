@@ -11,9 +11,9 @@ Our group met for meetings of about two hours on each Monday, Wednesday, and Fri
 
 Tristan Wells: Composed section I.
 
-Trevor Chaney: Composed section II and section V.
+Jacob Homerosky: Started offline web service on A.2 during Task I. Composed sections II.a, II.b, III.
 
-Jacob Homerosky: Started offline web service on A.2 during Task I. Composed section III.
+Trevor Chaney: Composed section II.c, II.d, V.
 
 Alejandro Noria: Composed section IV.
 
