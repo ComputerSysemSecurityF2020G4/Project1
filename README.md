@@ -13,7 +13,7 @@ Tristan Wells: Composed section I.
 
 Jacob Homerosky: Started offline web service on A.2 during Task I. Composed sections II.a, II.b, III.
 
-Trevor Chaney: Composed section II.c, II.d, V.
+Trevor Chaney: Composed sections II.c, II.d, V.
 
 Alejandro Noria: Composed section IV.
 
