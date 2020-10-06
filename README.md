@@ -5,7 +5,14 @@ Group work for Computer Systems Security, project 1.
 
 ## Introduction
 
-Trevor Chaney: Assisted in data collection for all tasks and wrote the closing section for section V. The group had three weekly meetings to work on tasks for ~2 hours on Mondays, Wednesdays, and Fridays.
+The scope of this project is the implementation of iptables rules on a gateway between two networks and the effect of those rules. With empty iptables on each system, we first scanned both networks for available services with NMap and then sniffed ssh, icmp, and http traffic with Wireshark. We then created an Access Control Matrix modeling the security rules given in the project description and implemented those rules in the iptables of the router. Finally, we analyzed the services available on the internal network to the external network using NMap and sniffed ssh, icmp, and http traffic with Wireshark, noting the differences that were affected by the iptables rules.
+
+Our group met for meetings of about two hours on each Monday, Wednesday, and Friday for three weeks. All members attended meetings.
+
+Trevor Chaney: Assisted in data collection for all tasks and composed section II and section V.
+Jacob Homerosky: Started offline web service on A.2 during Task I. Assisted in data collection for all tasks.
+Alejandro Noria: Assisted in data collection for all tasks and composed section IV.
+Tristan Wells: Assisted in data collection for all tasks and composed section I.
 
 ---
 
@@ -176,7 +183,7 @@ The router did not observe any ping traffic between A.2 and A.1.
 | B (external)      | http            | -                 | -            |
 
 ### B) Issues with Policy Compliance 
-Since the router merely acts as a switch between systems on the same network, iptables rules on R can only govern internetwork communications between A and B. Any intranetwork communication rules from a system in A to another system in A cannot be enforced by the iptables of R. Likewise, any intranetwork communication rules from a system in B to another system in B cannot be enforced by the iptables of R.
+Since the router merely acts as a switch between systems on the same network, iptables rules on R can only govern internetwork communications between A and B. Any rules governing intranetwork communication from a system in A to another system in A cannot be enforced by the iptables of R. Likewise, any rules governing intranetwork communication from a system in B to another system in B cannot be enforced by the iptables of R.
 
 ### C) iptables Rules in R
 
@@ -234,7 +241,7 @@ The following is an implimentation for the iptables rules that would enforce the
 6: $ iptables -A INPUT -s 172.16.0.101/24 -j DROP
 ```
 
-#### Explination
+#### Explanation
 
 The issues found with the security policy, as is, in regards to the company's server were found in policy rule 'b', "The server provides only SSH and web service to the workstations." The reason that this policy could not be implimented on the network router (R) is because these connections skipped the router entirly at the switch level and 'R' was unable to prevent their connection. In fact, 'R' never saw that they were talking to eachother. So, the above policy should be implimented on 'A.1'. A line-by-line explination follows:
 
@@ -247,14 +254,14 @@ The issues found with the security policy, as is, in regards to the company's se
 
 ### B) Show iptables rules to enforce the security policy in A.2
 
-The following is an implimentation for the iptables rules that would enforce the security policy in the company's server (represented as A.2). An explination of these rules and why the are used follows after the illistration.
+The following is an implementation for the iptables rules that would enforce the security policy in the company's server (represented as A.2). An explination of these rules and why the are used follows after the illistration.
 
 ```bash
 1: $ iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
 2: $ iptables -A INPUT -j DROP
 ```
 
-### Explination
+### Explanation
 
 The issues found with the security policy as it is in regards to the company's workstations were found in the policy rule 'e', "The workstations can access the services hosted by the server." This rule cannot be enforced by the router 'R' as again it wouldn't see these connections and so it must be explicitely stated that workstations 'A.2' can accept traffic coming from the server 'A.1'. The following is an explination of the rules that would enforce that a workstation can access services in network 'A' that are provided by the server. The following is a line-by-line explination:
 
