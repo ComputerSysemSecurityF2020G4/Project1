@@ -189,7 +189,7 @@ Since the router merely acts as a switch between systems on the same network, ip
 
 ### A) Show NMap Results of Exposure of Network A
 
----(./images/Meta2_nmap_Task4.png)
+---
 
 ### B) Wireshark results of checking the web service between B.1 and A.1, and, A.2 and A.1
 
