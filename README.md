@@ -202,7 +202,7 @@ Since the router merely acts as a switch between systems on the same network, ip
 
 #### A.2 and A.1, stating whether or not web service is allowed between computers.
 
----
+---![A2toA1FromRouter_Task4_NoHTTP_NoSSH_NoICMP.png](./images/A2toA1FromRouter_Task4_NoHTTP_NoSSH_NoICMP.png)
 
 ### C) Wireshark results of checking the ping between B.1 and A.1, and, A.2 and A.1
 
