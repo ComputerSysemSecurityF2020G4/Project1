@@ -9,13 +9,13 @@ The scope of this project is the implementation of iptables rules on a gateway b
 
 Our group met for meetings of about two hours on each Monday, Wednesday, and Friday for three weeks. All members attended meetings.
 
+Tristan Wells: Assisted in data collection for all tasks and composed section I.
+
 Trevor Chaney: Assisted in data collection for all tasks and composed section II and section V.
 
 Jacob Homerosky: Started offline web service on A.2 during Task I. Assisted in data collection for all tasks. Composed section III.
 
 Alejandro Noria: Assisted in data collection for all tasks and composed section IV.
-
-Tristan Wells: Assisted in data collection for all tasks and composed section I.
 
 ---
 
