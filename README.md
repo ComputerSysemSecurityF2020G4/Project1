@@ -197,7 +197,7 @@ Since the router merely acts as a switch between systems on the same network, ip
 
 #### B.1 and A.1, stating whether or not web service is allowed between computers.
 
-![R_B1toA1_http.png](.images/task4_jacob/R_B1toA1_http.png)
+---![R_B1toA1_http (1).png](./images/R_B1toA1_http_(1).png
 
 
 #### A.2 and A.1, stating whether or not web service is allowed between computers.
