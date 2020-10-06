@@ -5,7 +5,7 @@ Group work for Computer Systems Security, project 1.
 
 ## Introduction
 
-The scope of this project is the implementation of iptables rules on a gateway between two networks and the effect of those rules. With empty iptables on each system, we first scanned both networks for available services with NMap and then sniffed ssh, icmp, and http traffic with Wireshark. We then created an Access Control Matrix modeling the security rules given in the project description and implemented those rules in the iptables of the router. Finally, we analyzed the services available on the internal network to the external network using NMap and sniffed ssh, icmp, and http traffic with Wireshark, noting the differences that were affected by the iptables rules.
+The scope of this project is the implementation of iptables rules on a gateway between two networks and the effects of those rules. With empty iptables on each system, we first scanned both networks for available services with NMap and then sniffed ssh, icmp, and http traffic with Wireshark. We then created an Access Control Matrix modeling the security rules given in the project description and implemented those rules in the iptables of the router. Finally, we analyzed the services available on the internal network to the external network using NMap and sniffed ssh, icmp, and http traffic with Wireshark, noting the differences that were affected by the iptables rules.
 
 Our group met for meetings of about two hours on each Monday, Wednesday, and Friday for three weeks. All members attended meetings.
 
