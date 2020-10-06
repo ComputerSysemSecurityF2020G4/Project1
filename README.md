@@ -186,6 +186,7 @@ The router did not observe any ping traffic between A.2 and A.1.
 | B (external)      | http            | -                 | -            |
 
 ### B) Issues with Policy Compliance 
+
 Since the router merely acts as a switch between systems on the same network, iptables rules on R can only govern internetwork communications between A and B. Any rules governing intranetwork communication from a system in A to another system in A cannot be enforced by the iptables of R. Likewise, any rules governing intranetwork communication from a system in B to another system in B cannot be enforced by the iptables of R.
 
 ### C) iptables Rules in R
@@ -193,13 +194,16 @@ Since the router merely acts as a switch between systems on the same network, ip
 ![iptables rules in R](./images/iptables.png)
 
 ---
+
 ## Test Implimentation of The Security Policy, Task IV
 
 ---
 
 ### A) Show NMap Results of Exposure of Network A
 
----![Meta2_nmap_Task4.png](./images/Meta2_nmap_Task4.png)
+![Meta2_nmap_Task4.png](./images/Meta2_nmap_Task4.png)
+
+---
 
 ### B) Wireshark results of checking the web service between B.1 and A.1, and, A.2 and A.1
 
@@ -219,17 +223,20 @@ Since the router merely acts as a switch between systems on the same network, ip
 ---
 
 #### B.1 and A.1, stating whether or not ping is allowed between computers.
+
 ---![R_B1toA1_ping.png](./images/task4_jacob/R_B1toA1_ping.png)
 
 #### A.2 and A.1, stating whether or not ping is allowed between computers.
 
----![Image_9-28-20_at_4.26_PM.jpeg](./images/Image_9-28-20_at_4.26_PM.jpeg)
+![Image_9-28-20_at_4.26_PM.jpeg](./images/Image_9-28-20_at_4.26_PM.jpeg)
+
+---
 
 ## Closing
 
 ---
 
-In closing we will discusse how the security policy could be inplimented on the company's server (A.1) and workstations (A.2) and further whether or not the security policy, as is, could ensure that classified data will **NOT** be disclosed to computers external to the company (computers on network B)
+In closing we will discusse how the security policy could be implimented on the company's server (A.1) and workstations (A.2) and further, whether or not the security policy, as is, could ensure that classified data will **NOT** be disclosed to computers external to the company (computers on network B).
 
 ### A) Show iptables rules to enforce the security policy in A.1
 
