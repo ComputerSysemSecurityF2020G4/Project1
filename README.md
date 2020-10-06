@@ -11,7 +11,7 @@ Our group met for meetings of about two hours on each Monday, Wednesday, and Fri
 
 Trevor Chaney: Assisted in data collection for all tasks and composed section II and section V.
 
-Jacob Homerosky: Started offline web service on A.2 during Task I. Assisted in data collection for all tasks.
+Jacob Homerosky: Started offline web service on A.2 during Task I. Assisted in data collection for all tasks. Composed section III.
 
 Alejandro Noria: Assisted in data collection for all tasks and composed section IV.
 
