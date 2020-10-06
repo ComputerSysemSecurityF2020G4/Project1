@@ -1,3 +1,13 @@
+---
+title: Computer Systems Security, Group 4, Project 1
+author:
+- Trevor Chaney
+- Jacob Homerosky
+- Alejandro Noria
+- Triston Wells
+date: 6 October, 2020
+---
+
 # Project1
 Group work for Computer Systems Security, project 1.
 
@@ -48,7 +58,7 @@ $ nmap 10.0.0.0/24
 
 The following are the discovered IP's and services on Network A:
 
-![Discovered ports on Network A](./images/nmap_A.png)
+![Discovered ports on Network A](./images/nmap_A.png){ height=35% }
 
 #### 2) Run NMap in A.2 on Network B
 
@@ -56,9 +66,9 @@ The following are the discovered IP's and services on Network A:
 
 The following are the discovered IP's and services on Network B:
 
-![Discovered ports on Network B](./images/nmap_Bpart1.png)
+![Discovered ports on Network B](./images/nmap_Bpart1.png){ height=35% }
 
-![nmap output for task 2 on network B part 2](./images/nmap_Bpart2.png)
+![nmap output for task 2 on network B part 2](./images/nmap_Bpart2.png){ height=35% }
 
 ---
 
@@ -75,24 +85,24 @@ A.1 observed the following:
 
 **HTTP**
 
-![Wireshark collection for web services observed by A.1](./images/task2_jacob/ubuntu_filtered/A1_B1toA1_http.png)
+![Wireshark collection for web services observed by A.1](./images/task2_jacob/ubuntu_filtered/A1_B1toA1_http.png){ height=35% }
 
 **SSH**
 
-![Wireshark collection for web services observed by A.1](./images/task2_jacob/ubuntu_filtered/A1_B1toA1_ssh.png)
+![Wireshark collection for web services observed by A.1](./images/task2_jacob/ubuntu_filtered/A1_B1toA1_ssh.png){ height=35% }
 
 A.2 observed the following:
 
 **WARNING**
 A.2 did not show any network traffic for Ping, Curl, or SSH traffic.
 
-![Wireshark collection for web services observed by A.2](./images/B1toA1FromKali-NoWebOrPingToShow.png)
+![Wireshark collection for web services observed by A.2](./images/B1toA1FromKali-NoWebOrPingToShow.png){ height=35% }
 
 R observed the following:
 
 **HTTP**
 
-![Wireshark collection for web services observed by R](images/5E22BFFB-705D-445F-ACA2-666590030FEA.jpeg)
+![Wireshark collection for web services observed by R](images/5E22BFFB-705D-445F-ACA2-666590030FEA.jpeg){ height=35% }
 
 #### A.2 and A.1
 This section shows the data collected that was passed between A.2 and A.1 and by which observer.
@@ -101,21 +111,21 @@ A.1 observed the following:
 
 **HTTP**
 
-![Wireshark collection for web services observed by A.1](./images/task2_jacob/ubuntu_filtered/A1_A2toA1_http.png)
+![Wireshark collection for web services observed by A.1](./images/task2_jacob/ubuntu_filtered/A1_A2toA1_http.png){ height=35% }
 
 **SSH**
 
-![Wireshark collection for web services observed by A.1](./images/task2_jacob/ubuntu_filtered/A1_A2toA1_ssh.png)
+![Wireshark collection for web services observed by A.1](./images/task2_jacob/ubuntu_filtered/A1_A2toA1_ssh.png){ height=35% }
 
 A.2 observed the following:
 
 **HTTP**
 
-![Wireshark collection for web services observed by A.2](./images/A2toA1FromKali-WebServices.png)
+![Wireshark collection for web services observed by A.2](./images/A2toA1FromKali-WebServices.png){ height=35% }
 
 **SSH**
 
-![Wireshark collection for web services observed by A.1](./images/task2_jacob/ubuntu_filtered/A1_A2toA1_ssh.png)
+![Wireshark collection for web services observed by A.1](./images/task2_jacob/ubuntu_filtered/A1_A2toA1_ssh.png){ height=35% }
 
 R observed the following:
 
@@ -137,7 +147,7 @@ A.1 observed the following:
 
 **ICMP**
 
-![Wireshark collection for ping observed by A.1](images/task2_jacob/ubuntu_filtered/A1_B1toA1_icmp.png)
+![Wireshark collection for ping observed by A.1](images/task2_jacob/ubuntu_filtered/A1_B1toA1_icmp.png){ height=35% }
 
 A.2 observed the following:
 
@@ -145,11 +155,11 @@ A.2 observed the following:
 A.2 did not show any network traffic for Ping, Curl, or SSH traffic.
 
 
-![Wireshark collection for web services observed by A.2](./images/B1toA1FromKali-NoWebOrPingToShow.png)
+![Wireshark collection for web services observed by A.2](./images/B1toA1FromKali-NoWebOrPingToShow.png){ height=35% }
 
 R observed the following:
 
-![Wireshark collection for ping observed by R]()
+![Wireshark collection for ping observed by R](){ height=35% }
 
 #### A.2 and A.1
 This section shows the data collected that was passed between A.2 and A.1 and by which observer.
@@ -158,13 +168,13 @@ A.1 observed the following:
 
 **ICMP**
 
-![Wireshark collection for ping observed by A.1](./images/task2_jacob/ubuntu_filtered/A1_A2toA1_icmp.png)
+![Wireshark collection for ping observed by A.1](./images/task2_jacob/ubuntu_filtered/A1_A2toA1_icmp.png){ height=35% }
 
 A.2 observed the following:
 
 **ICMP**
 
-![Wireshark collection for ping observed by A.2](./images/A2toA1FromKali-Ping.png)
+![Wireshark collection for ping observed by A.2](./images/A2toA1FromKali-Ping.png){ height=35% }
 
 R observed the following:
 
@@ -191,7 +201,7 @@ Since the router merely acts as a switch between systems on the same network, ip
 
 ### C) iptables Rules in R
 
-![iptables rules in R](./images/iptables.png)
+![iptables rules in R](./images/iptables.png){ height=35% }
 
 ---
 
@@ -201,7 +211,7 @@ Since the router merely acts as a switch between systems on the same network, ip
 
 ### A) Show NMap Results of Exposure of Network A
 
-![Meta2_nmap_Task4.png](./images/Meta2_nmap_Task4.png)
+![Meta2_nmap_Task4.png](./images/Meta2_nmap_Task4.png){ height=35% }
 
 ---
 
@@ -211,12 +221,12 @@ Since the router merely acts as a switch between systems on the same network, ip
 
 #### B.1 and A.1, stating whether or not web service is allowed between computers.
 
-![R_B1toA1_http.png](./images/task4_jacob/R_B1toA1_http.png)
+![R_B1toA1_http.png](./images/task4_jacob/R_B1toA1_http.png){ height=35% }
 
 
 #### A.2 and A.1, stating whether or not web service is allowed between computers.
 
----![A2toA1FromRouter_Task4_NoHTTP_NoSSH_NoICMP.png](./images/A2toA1FromRouter_Task4_NoHTTP_NoSSH_NoICMP.png)
+---![A2toA1FromRouter_Task4_NoHTTP_NoSSH_NoICMP.png](./images/A2toA1FromRouter_Task4_NoHTTP_NoSSH_NoICMP.png){ height=35% }
 
 ### C) Wireshark results of checking the ping between B.1 and A.1, and, A.2 and A.1
 
@@ -224,11 +234,11 @@ Since the router merely acts as a switch between systems on the same network, ip
 
 #### B.1 and A.1, stating whether or not ping is allowed between computers.
 
----![R_B1toA1_ping.png](./images/task4_jacob/R_B1toA1_ping.png)
+---![R_B1toA1_ping.png](./images/task4_jacob/R_B1toA1_ping.png){ height=35% }
 
 #### A.2 and A.1, stating whether or not ping is allowed between computers.
 
-![Image_9-28-20_at_4.26_PM.jpeg](./images/Image_9-28-20_at_4.26_PM.jpeg)
+![Image_9-28-20_at_4.26_PM.jpeg](./images/Image_9-28-20_at_4.26_PM.jpeg){ height=35% }
 
 ---
 
